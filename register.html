@@ -1,0 +1,96 @@
+
+<html lang = "en">
+<head>
+<title>  Registration Form </title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: rgb(44, 28, 192);
+        }
+        </style>
+</head>
+
+<body>
+        <ul>
+                
+                <li><a href="register">Signup</a></li>
+                <li><a href="login">Login</a></li>
+            
+              </ul>
+<form  action="/register" method = "POST" style="margin-left: 30% ; margin-right: 30%; margin-top: 10%; ">
+<p>
+    
+    <p>
+    <label> Full Name: </label> 
+    <input type="text"
+            id="name"
+            name='name'
+            placeholder="Enter your fullname" /> 
+</p> 
+<p>
+    <label>Email:</label>
+    <input type="text"
+            id="email"
+            name='email'
+            placeholder="Enter email"/>
+</p>
+<p>
+    <label>Gender: </label>
+    <input type="radio" id="male" name="gender" value="male"/>
+    <label>Male</label>
+    <input type="radio" id="female" name="gender" value="female"/>
+    <label>Female</label>
+    <input type="radio" id="other" name="gender" value="other"/>
+    <label>Other</label>
+</p>
+<p>
+    <label>Username:</label>
+    <input type="text" id="username" name='username' placeholder="Enter username"/>
+</p>
+<p>
+    <label>Password:</label>
+    <input type="password" id="password" name='password'placeholder="Enter password"/>
+</p>
+<!-- <p>
+        <label>Password:</label>
+        <input type="password" id="conpswd" name='conpswd'placeholder="confirm  password"/>
+    </p> -->
+  
+<p>
+    <input type="submit" id="save" name='save' value="Register" />
+</p>    
+
+
+
+
+
+ 
+</body>
+
+
+
+
+
+
+</html>
